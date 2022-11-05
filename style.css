@@ -1,0 +1,247 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+/* VARIABLES */
+:root {
+  --bg-color: #ecf2f8;
+  --data-color: #9daec2;
+  --h1-color: #48556a;
+  --p-color: #6e8098;
+  --white: #fff;
+}
+
+/* MAIN */
+body {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg-color);
+  font-weight: 500;
+  font-size: 0.8125rem;
+  font-family: "Manrope", sans-serif;
+  color: var(--p-color);
+  line-height: 1.25rem;
+}
+
+h1 {
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--h1-color);
+  line-height: 1.5rem;
+  letter-spacing: 0.0125rem;
+}
+
+/* SECTION */
+section {
+  width: 20.4375rem;
+  height: 32rem;
+  border-radius: 0.625rem;
+  box-shadow: 0rem 2.5rem 2.5rem -0.625rem rgba(201, 213, 225, 0.503415);
+  background: var(--white);
+}
+
+#section__img {
+  width: 20.4375rem;
+  height: 12.5rem;
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+
+/* ARTICLE */
+article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 20.4375rem;
+  padding: 2.25rem 2rem 1.25rem 2rem;
+}
+
+.article__paragraph {
+  margin-bottom: 2rem;
+  letter-spacing: 0.0076rem;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* AUTHOR */
+.author {
+  display: flex;
+  gap: 1rem;
+}
+
+#author__img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.author__name {
+  font-weight: 700;
+  color: var(--h1-color);
+}
+
+.author__day {
+  color: var(--data-color);
+}
+
+/* POPUP */
+.author__popup {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  top: 15.1875rem;
+  height: 4rem;
+  width: 100%;
+  border-radius: 0 0 0.625rem 0.625rem;
+  background: var(--h1-color);
+  box-shadow: 0px 0.625rem 0.625rem rgba(201, 213, 225, 0.503415);
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  min-width: 10.9375rem;
+}
+
+.author__popup p {
+  letter-spacing: 0.3125rem;
+  color: var(--data-color);
+  text-transform: uppercase;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.author__popup .share-icon {
+  margin: 0 0.125rem 0.3125rem 0;
+  background: var(--p-color);
+}
+
+.share-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--bg-color);
+  -o-object-fit: scale-down;
+  object-fit: scale-down;
+}
+
+@media screen and (min-width: 46.875rem) {
+  h1 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.0156rem;
+  }
+
+  /* SECTION */
+  section {
+    display: flex;
+    width: 45.625rem;
+    height: 17.5rem;
+  }
+
+  #section__img {
+    width: 17.8125rem;
+    height: 17.5rem;
+    border-radius: 0.625rem 0 0 0.625rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 0;
+    object-position: 0;
+  }
+
+  /* ARTICLE */
+  article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2.5rem;
+  }
+
+  .article__paragraph {
+    margin-bottom: 1.25rem;
+  }
+
+  /* POPUP */
+
+  footer {
+    align-items: flex-end;
+  }
+
+  .author__popup {
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    left: 16.625rem;
+    top: 8.625rem;
+    height: 3.4375rem;
+    width: 15.5rem;
+    background: var(--h1-color);
+    border-radius: 0.625rem;
+  }
+
+  .icons {
+    align-items: center;
+    width: 15.5rem;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+
+  .author__popup .share-icon {
+    display: none;
+  }
+
+  .share-icon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: var(--bg-color);
+    -o-object-fit: scale-down;
+    object-fit: scale-down;
+  }
+
+  .icons p {
+    position: relative;
+  }
+
+  .icons p:after {
+    content: "";
+    position: absolute;
+    left: 120%;
+    z-index: -1;
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--h1-color);
+    rotate: 45deg;
+  }
+}
+
+@media (hover: hover) {
+  .icon:hover,
+  .share-icon:hover {
+    opacity: 0.7;
+  }
+}

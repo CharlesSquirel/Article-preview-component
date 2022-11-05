@@ -7,11 +7,49 @@
     <meta name="description" content="Article preview component" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet" />
   </head>
   <body>
-    Shift the overall look and feel by adding these wonderful touches to furniture in your home Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting.
-    I’ve got some simple tips to help you make any room feel complete. Michelle Appleton 28 Jun 2020 Share
+    <main>
+      <!-- SECTION -->
+      <section>
+        <!-- SECTION IMG -->
+        <img id="section__img" src="drawers.jpg" alt="" aria-hidden="true" />
+        <!-- ARTICLE -->
+        <article>
+          <h1>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+          <p class="article__paragraph">
+            Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.
+          </p>
+          <!-- FOOTER -->
+          <footer>
+            <!-- AUTHOR -->
+            <div class="author">
+              <img id="author__img" src="avatar-michelle.jpg" alt="" aria-hidden="true" />
+              <div class="author__datas">
+                <p class="author__name">Michelle Appleton</p>
+                <p class="author__day">28 Jun 2020</p>
+              </div>
+            </div>
+            <!-- POPUP -->
+            <div class="author__popup">
+              <div class="icons">
+                <p>Share</p>
+                <a href="#"><img class="icon" src="icon-facebook.svg" alt="Facebook link" /></a>
+                <a href="#"><img class="icon" src="icon-twitter.svg" alt="Twitter link" /></a>
+                <a href="#"><img class="icon" src="icon-pinterest.svg" alt="Pinterest link" /></a>
+              </div>
+              <button><img class="share-icon icon-popup" src="icon-share-popup.svg" alt="" /></button>
+            </div>
+            <!-- BUTTON -->
+            <button><img class="share-icon icon-card" src="icon-share.svg" alt="Toogle social media popup" role="button" /></button>
+          </footer>
+        </article>
+      </section>
+    </main>
     <script src="script.js" async defer></script>
   </body>
 </html>
